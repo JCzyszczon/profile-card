@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+:root {
+    --bg-color: hsl(185, 75%, 39%);
+    --header-color: hsl(229, 23%, 23%);
+    --p-color: hsl(227, 10%, 46%);
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: 'Kumbh Sans', sans-serif;
+    color: var(--p-color);
+    font-size: 1.125rem;
+}
+
+.profile-card-component {
+    background-color: var(--bg-color);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    place-items: center;
+    place-content: center;
+}
+
+.profile-card-component .bubble1 {
+    position: fixed;
+    left: -18%;
+    top: -53%;
+    z-index: 0;
+}
+
+.profile-card-component .bubble2 {
+    position: fixed;
+    right: -13%;
+    bottom: -70%;
+    z-index: 0;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 1rem;
+    min-width: 18.2%;
+    z-index: 1000;
+    margin: 1.25em;
+}
+
+.background-photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.background-photo .bg-pht {
+    width: 100%;
+    height: auto;
+    z-index: 0;
+}
+
+.background-photo .profile {
+    position: absolute;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    transform: translateY(70%);
+}
+
+.description {
+    margin: auto;
+    text-align: center;
+}
+
+.description img {
+    border-radius: 50%;
+    transform: translateY(-50%);
+    z-index: 10000000000;
+    border: 2px solid #fff;
+    scale: 1.3;
+}
+
+.description h1 {
+    font-size: 1rem;
+    margin-top: 5em;
+    color: var(--header-color);
+    font-weight: 700;
+}
+
+.description span {
+    color: var(--p-color);
+    font-weight: 400;
+}
+
+.description p {
+    margin-top: 6px;
+    font-size: 0.938rem;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 1px solid hsl(0, 0%, 89%);
+    margin-top: 1.5em;
+    padding: 0px 1.25em;
+}
+
+.socials div {
+    margin: 1.25em 0px;
+}
+
+.socials h2{
+    color: var(--header-color);
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+.socials p {
+    font-size: 0.625rem;
+    margin-top: 5px;
+    letter-spacing: 2px;
+}
+
+@media screen and (max-width: 475px) {
+    .profile-card-component .bubble1 {
+        left: -210%;
+        top: -80%;
+    }
+
+    .profile-card-component .bubble2 {
+        right: -200%;
+        bottom: -90%;
+    }
+}
