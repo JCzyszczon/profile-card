@@ -75,4 +75,4 @@ Users should be able to:
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 [live-page]: https://profile-card-nine-delta.vercel.app/
-[solution-url]: https://www.frontendmentor.io/solutions/responsive-interactive-rating-component-IH9xZTW7kw
+[solution-url]: https://www.frontendmentor.io/solutions/responsive-profile-card-component-g23mSEiaLC
